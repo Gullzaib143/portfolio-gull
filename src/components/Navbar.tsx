@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import samplePdf from '../../public/Resume-GullZaib.pdf';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,6 +28,13 @@ const Navbar = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = samplePdf; 
+    link.download = 'resume.pdf'; // File name for download
+    link.click();
+  };
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -36,7 +44,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="#home" className="text-xl font-bold tracking-tighter text-primary">
-            <span className="text-foreground">Dev</span>Portfolio
+            <span className="text-foreground">Gull </span>Zaib
           </a>
 
           {/* Desktop Navigation */}
@@ -51,7 +59,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button>
-              <a href="#contact">Get In Touch</a>
+              <a href="#" onClick={handleDownload}>Resume</a>
             </Button>
           </div>
 
@@ -80,8 +88,8 @@ const Navbar = () => {
                 </a>
               ))}
               <Button className="w-full">
-                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-                  Get In Touch
+                <a href="#" onClick={() => { setIsMenuOpen(false); handleDownload(); }}>
+                  Resume
                 </a>
               </Button>
             </div>

@@ -37,20 +37,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
           ))}
         </div>
         
-        <div className="flex justify-between pt-4">
-          <Button variant="outline" size="sm" asChild>
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-              <Github size={16} />
-              Code
-            </a>
-          </Button>
-          <Button size="sm" asChild>
-            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-              <ExternalLink size={16} />
-              Live Demo
-            </a>
-          </Button>
-        </div>
+        
       </div>
     </div>
   );

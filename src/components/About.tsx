@@ -3,9 +3,12 @@ import { Code, Briefcase, User } from "lucide-react";
 
 const About = () => {
   const skills = [
-    "JavaScript", "TypeScript", "React", "Next.js", 
-    "CSS/SCSS", "Tailwind CSS", "Node.js", "GraphQL",
-    "Redux", "Webpack", "Jest", "Git/GitHub"
+    "JavaScript", "TypeScript", "Angular 9+", "Next.js", "React", "Adobe ColdFusion", 
+    "HTML/HTML5", "CSS3", "SASS", "Responsive Design", "Cross-Browser Compatibility", 
+    "CSS/SCSS", "Tailwind CSS", "Bootstrap", "Material UI", "NG Prime", "Prime Flex",
+    "SIP.JS", "JSSIP", "Web Socket", "Node.js", "Express", "NgRx", "RxJs", "Webpack", "Git/GitHub/GitLab",
+    "MySql", "Microsoft SQL Server", "REST APIs", "Postman", "Swagger", "Jasmine", "Karma",
+    "Jira", "Agile/Scrum", "Figma"
   ];
 
   return (
@@ -41,7 +44,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold">Professional Experience</h3>
               <p className="text-muted-foreground">
-                With X years of industry experience, I've collaborated with diverse teams
+                With 5+ years of industry experience, I've collaborated with diverse teams
                 to deliver projects across various domains and industries.
               </p>
             </div>

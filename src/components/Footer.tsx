@@ -25,7 +25,7 @@ const Footer = () => {
           
           <div className="text-center">
             <a href="#home" className="text-xl font-bold tracking-tighter text-primary">
-              <span className="text-foreground">Dev</span>Portfolio
+              <span className="text-foreground">Gull </span>Zaib
             </a>
             <p className="text-muted-foreground mt-2">
               &copy; {currentYear} All Rights Reserved
