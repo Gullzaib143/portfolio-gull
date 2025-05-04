@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import samplePdf from '../../public/Resume-GullZaib.pdf';
+import samplePdf from '../../public/Gull-Resume.pdf';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
